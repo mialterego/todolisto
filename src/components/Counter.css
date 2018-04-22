@@ -17,6 +17,21 @@
   width: 100%;
 }
 
+.logo {
+  margin: auto;
+  padding-left: 5px;
+  height: 20px;
+  width: 30px;
+}
+
+.logo path {
+  fill: rgb(148, 163, 125);
+}
+
+.logo ellipse {
+  fill: rgb(75, 75, 107);
+}
+
 .subtitle {
   margin: 0px;
   padding: 5px;
