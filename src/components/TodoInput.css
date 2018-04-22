@@ -1,0 +1,51 @@
+/*.TodoInput-container {
+  padding: 10px;
+}*/
+
+.TodoInput {
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 7px rgba(83, 83, 83, 0.5);
+  
+  display: flex;
+}
+
+.input-field {
+  /*box-sizing: border-box;*/
+  /*padding: 5px;*/
+  background-color: rgb(221, 221, 221);
+  /*width: 420px;*/
+  /*width: max-content;*/
+  width: 100%;
+  padding-left: 10px;
+  border-style: solid;
+  border-width: 0px;
+  min-height: 30px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  /*color: rgb(255, 255, 255);*/
+}
+
+.btn-add {
+  min-height: 30px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 0px;
+  text-align: center;
+  /*---*/
+  width: 30px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  /*---*/
+  background-color: rgb(128, 201, 11);
+  color: rgb(44, 70, 4);
+  font-weight: bold;
+}
+
+.btn-add:hover {
+  background-color: rgb(139, 218, 14);
+}
+
+.btn-add:active {
+  background-color: rgb(126, 197, 13);
+}

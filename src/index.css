@@ -1,0 +1,14 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  /*background-color: rgb(190, 190, 207);*/
+  background:
+    linear-gradient(
+      to bottom left, 
+    rgb(217, 243, 184), 
+    rgb(136, 182, 235));
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
