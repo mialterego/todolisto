@@ -37,6 +37,14 @@ class TodoItem extends Component {
   handleInput(e){
     e.target.style.height = 'auto';
     e.target.style.height = (e.target.scrollHeight) + 'px';
+    
+    const target = e.target;
+    const item = this.props.item;
+    const newContent = target.value;
+    this.setState((prevState, props) => ({
+      content: newContent
+    }));
+    this.props.handleEdit(e, item, newContent);
   }
 
   finishEdition() {
@@ -46,13 +54,6 @@ class TodoItem extends Component {
   }
 
   handleChange(e) {
-    const target = e.target;
-    const item = this.props.item;
-    const newContent = target.value;
-    this.setState((prevState, props) => ({
-      content: newContent
-    }));
-    this.props.handleEdit(e, item, newContent);
   }
 
   handleKeyDown(e) {
