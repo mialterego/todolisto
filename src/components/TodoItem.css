@@ -88,6 +88,22 @@
   color: rgb(71, 71, 71);
 }
 
+.item-tickmark {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+
+.item-tickmark path {
+  fill: rgb(212, 212, 212);
+}
+
+.item-tickmark ellipse {
+  fill: rgb(68, 72, 104);
+}
+
 .btn-resolve {
   /*min-height: 30px;*/
   border-radius: 3px;
