@@ -14,16 +14,6 @@ class TodoItem extends Component {
   }
 
   handleClick(e) {
-    //const pos = this.getCursorPosition();
-    //const pos = window.getSelection();
-    //console.log(pos);
-    //console.log(e.target.selectionStart);
-    /*if (pos.anchorOffset === pos.focusOffset) {
-      this.setState(() => ({
-        cursorPosition: pos.focusOffset
-      }));
-    }*/
-    //console.log(pos);
     const pos = {
       start: e.target.selectionStart,
       end: e.target.selectionEnd
@@ -38,9 +28,6 @@ class TodoItem extends Component {
   handleDoubleClick(e) {
     //window.getSelection().removeAllRanges();
     //e.preventDefault();
-    //console.log(e.cancelable);
-    //e.preventDefault();
-    //console.log(this.state.cursorPosition);
     this.setState(() => ({
       editingMode: !this.state.editingMode,
       shouldPositionBeSet: !this.state.editingMode
@@ -60,9 +47,12 @@ class TodoItem extends Component {
 
   handleChange(e) {
     const target = e.target;
+    const item = this.props.item;
+    const newContent = target.value;
     this.setState((prevState, props) => ({
-      content: target.value
+      content: newContent
     }));
+    this.props.handleEdit(e, item, newContent);
   }
 
   handleKeyDown(e) {

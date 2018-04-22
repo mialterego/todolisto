@@ -12,20 +12,6 @@ class App extends Component {
       nextKey: 4,
       itemList: [] //Cada elemento debe tener un id, un contenido y un estado (resuelto o no resuelto)
     }
-    /*itemList: [
-        {key: 0,
-        content: 'This is a test.',
-        state: 0},
-        {key: 1,
-        content: 'This is also test.',
-        state: 0},
-        {key: 2,
-        content: 'This is another test.',
-        state: 1},
-        {key: 3,
-        content: 'This is yet another test.',
-        state: 0},
-      ]*/
   }
   
   handleItem_Edit(e, itemToUpdate, newContent){
@@ -105,13 +91,6 @@ class App extends Component {
     }));
   }
 
-  /*onUnload(e){
-    //console.log('holas');
-    console.log(JSON.stringify(this.state));
-    localStorage.setItem('appState', JSON.stringify(this.state));
-    //e.returnValue='';
-  }*/
-
   saveStateToLocalStorage(){
     //console.log('holas');
     //console.log(JSON.stringify(this.state));
@@ -133,10 +112,6 @@ class App extends Component {
       JSON.parse(localStorage.getItem('appState'))
     ));
   }
-
-  //componentWillUnmount(){
-  //  window.removeEventListener("beforeunload", (e) => this.onUnload(e));
-  //}
 
   render() {
     let nPending = 0;
